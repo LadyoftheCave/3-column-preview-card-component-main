@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+
+.container {
+    width: 50rem;
+    height: 27rem;
+    background-color: #E28525;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.box {
+    padding: 2.7rem;
+}
+
+.box p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    opacity: 0.5;
+}
+
+.blauw {
+    background-color: #016972;
+}
+
+.groen {
+    background-color: #00403F;
+}
+
+button {
+    border: none;
+    background-color: white;
+    width: 8rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    font-family: inherit;
+    border-radius: 20px;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+#oranjebutton {
+    color: #E28525;
+}
+
+#oranjebutton:hover, #blauwebutton:hover, #groenebutton:hover {
+    color: #fff;
+    opacity: 0.5;
+}
+
+#blauwebutton {
+    color: #016972;
+}
+
+#groenebutton {
+    color: #00403F;
+}
+
+.image {
+    height: 2.7rem;
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+#imageoranje {
+    background-image: url(images/icon-sedans.svg);
+}
+
+#imageblauw {
+    background-image: url(images/icon-suvs.svg);
+}
+
+#imagegroen {
+    background-image: url(images/icon-luxury.svg);
+}
+
+
+@media (max-width: 830px) {
+.container {
+    flex-direction: column;
+    width: 20rem;
+    height: auto;
+}
+
+.image {
+    height: 3rem;
+    background-size: 25%;
+    background-repeat: no-repeat;
+}
+
+button {
+    margin-top: 2rem;
+}
+
+.box {
+    padding: 2.7rem;
+}
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
